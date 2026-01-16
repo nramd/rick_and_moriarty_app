@@ -1,10 +1,10 @@
 # Rick and Morty App
 
-## <a name="introduction"></a> Introduction : 
+## <a name="introduction"></a> Introduction :
 
-A Flutter mobile application that displays characters from the Rick and Morty universe. This app is built using **Clean Architecture** principles with **BLoC** as the state management solution.  The app fetches data from the [Rick and Morty API](https://rickandmortyapi.com/) and allows users to browse, search, and save their favorite characters.
+A Flutter mobile application that displays characters from the Rick and Morty universe. This app is built using **Clean Architecture** principles with **BLoC** as the state management solution. The app fetches data from the [Rick and Morty API](https://rickandmortyapi.com/) and allows users to browse, search, and save their favorite characters.
 
-This project was developed as a take-home challenge submission for BIGIO Mobile Developer position. 
+This project was developed as a take-home challenge submission for BIGIO Mobile Developer position.
 
 ## Table of Contents
 
@@ -21,6 +21,7 @@ This project was developed as a take-home challenge submission for BIGIO Mobile 
 ## <a name="features"></a> Features :
 
 ### Main Features
+
 - **Home Page** - Display list of characters in a responsive grid layout
 - **Character Detail** - Show detailed information of a character including:
   - Name
@@ -35,6 +36,7 @@ This project was developed as a take-home challenge submission for BIGIO Mobile 
 - **Favorite List** - Display list of favorite characters with swipe-to-delete functionality
 
 ### Additional Features
+
 - Infinite scroll pagination on Home and Search pages
 - Pull-to-refresh functionality
 - Shimmer loading animation
@@ -45,32 +47,33 @@ This project was developed as a take-home challenge submission for BIGIO Mobile 
 
 ## <a name="screenshots"></a> Screenshots :
 
-| Home Page | Detail Page | Search Page | Favorites Page |
-|-----------|-------------|-------------|----------------|
+| Home Page                     | Detail Page                       | Search Page                       | Favorites Page                          |
+| ----------------------------- | --------------------------------- | --------------------------------- | --------------------------------------- |
 | ![Home](screenshots/home.png) | ![Detail](screenshots/detail.png) | ![Search](screenshots/search.png) | ![Favorites](screenshots/favorites.png) |
 
 ## <a name="libraries"></a> Libraries :
 
-| Library | Version | Description |
-|---------|---------|-------------|
-| [flutter_bloc](https://pub.dev/packages/flutter_bloc) | ^8.1.3 | State management using BLoC pattern |
-| [equatable](https://pub.dev/packages/equatable) | ^2.0.5 | Value equality for Dart objects |
-| [dio](https://pub.dev/packages/dio) | ^5.4.0 | HTTP client for API requests |
-| [sqflite](https://pub.dev/packages/sqflite) | ^2.3.0 | SQLite database for local storage |
-| [get_it](https://pub.dev/packages/get_it) | ^7.6.4 | Service locator for dependency injection |
-| [dartz](https://pub.dev/packages/dartz) | ^0.10.1 | Functional programming (Either type) |
-| [cached_network_image](https://pub.dev/packages/cached_network_image) | ^3.3.0 | Image caching and loading |
-| [shimmer](https://pub.dev/packages/shimmer) | ^3.0.0 | Shimmer loading effect |
-| [path](https://pub.dev/packages/path) | ^1.8.3 | Path manipulation for database |
+| Library                                                               | Version | Description                              |
+| --------------------------------------------------------------------- | ------- | ---------------------------------------- |
+| [flutter_bloc](https://pub.dev/packages/flutter_bloc)                 | ^8.1.3  | State management using BLoC pattern      |
+| [equatable](https://pub.dev/packages/equatable)                       | ^2.0.5  | Value equality for Dart objects          |
+| [dio](https://pub.dev/packages/dio)                                   | ^5.4.0  | HTTP client for API requests             |
+| [sqflite](https://pub.dev/packages/sqflite)                           | ^2.3.0  | SQLite database for local storage        |
+| [get_it](https://pub.dev/packages/get_it)                             | ^7.6.4  | Service locator for dependency injection |
+| [dartz](https://pub.dev/packages/dartz)                               | ^0.10.1 | Functional programming (Either type)     |
+| [cached_network_image](https://pub.dev/packages/cached_network_image) | ^3.3.0  | Image caching and loading                |
+| [shimmer](https://pub.dev/packages/shimmer)                           | ^3.0.0  | Shimmer loading effect                   |
+| [path](https://pub.dev/packages/path)                                 | ^1.8.3  | Path manipulation for database           |
 
 ### Dev Dependencies
-| Library | Version | Description |
-|---------|---------|-------------|
-| [bloc_test](https://pub.dev/packages/bloc_test) | ^9.1.5 | Testing utilities for BLoC |
-| [mocktail](https://pub.dev/packages/mocktail) | ^1.0.1 | Mocking library for tests |
-| [flutter_lints](https://pub.dev/packages/flutter_lints) | ^3.0.1 | Lint rules for Flutter |
 
-## <a name="project-structures"></a> Project Structure : 
+| Library                                                 | Version | Description                |
+| ------------------------------------------------------- | ------- | -------------------------- |
+| [bloc_test](https://pub.dev/packages/bloc_test)         | ^9.1.5  | Testing utilities for BLoC |
+| [mocktail](https://pub.dev/packages/mocktail)           | ^1.0.1  | Mocking library for tests  |
+| [flutter_lints](https://pub.dev/packages/flutter_lints) | ^3.0.1  | Lint rules for Flutter     |
+
+## <a name="project-structures"></a> Project Structure :
 
 This project follows **Clean Architecture** with feature-first organization:
 
@@ -202,7 +205,8 @@ This project implements **Clean Architecture** with three main layers:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Design Patterns Used: 
+### Design Patterns Used:
+
 - **Repository Pattern** - Abstraction between data sources and domain layer
 - **BLoC Pattern** - Predictable state management
 - **Dependency Injection** - Using GetIt for service locator
@@ -211,6 +215,7 @@ This project implements **Clean Architecture** with three main layers:
 ## <a name="how-to-run"></a> How to Run :
 
 ### Prerequisites
+
 - Flutter SDK (>=3.2.0)
 - Dart SDK (>=3.2.0)
 - Android Studio / VS Code
@@ -219,17 +224,20 @@ This project implements **Clean Architecture** with three main layers:
 ### Installation Steps
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/nramd/rick_and_moriarty_app.git
    cd rick_and_moriarty_app
    ```
 
 2. **Install dependencies**
+
    ```bash
    flutter pub get
    ```
 
 3. **Run the app**
+
    ```bash
    flutter run
    ```
@@ -239,15 +247,15 @@ This project implements **Clean Architecture** with three main layers:
    flutter build apk --release
    ```
 
-## <a name="testing"></a> Testing : 
+## <a name="testing"></a> Testing :
 
-This project includes **22 unit test cases** covering: 
+This project includes **22 unit test cases** covering:
 
-| Test File | Test Cases | Coverage |
-|-----------|-----------|----------|
-| `get_characters_test.dart` | 4 | UseCase logic |
-| `character_repository_impl_test.dart` | 9 | Repository + DataSource |
-| `character_bloc_test.dart` | 9 | BLoC state management |
+| Test File                             | Test Cases | Coverage                |
+| ------------------------------------- | ---------- | ----------------------- |
+| `get_characters_test.dart`            | 4          | UseCase logic           |
+| `character_repository_impl_test.dart` | 9          | Repository + DataSource |
+| `character_bloc_test.dart`            | 9          | BLoC state management   |
 
 ### Run Tests
 
@@ -263,13 +271,14 @@ flutter test --coverage
 ```
 
 ### Test Results
+
 ```
 00:02 +22:  All tests passed!
 ```
 
-## <a name="apk-link"></a> APK Link : 
+## <a name="apk-link"></a> APK Link :
 
-📱 **Download APK:** [Google Drive Link](YOUR_GOOGLE_DRIVE_LINK_HERE)
+📱 **Download APK:** [Google Drive Link](https://drive.google.com/drive/folders/17IHv4ileCne0xFd5FK6oNcyVJ1A3z_Fw?usp=sharing)
 
 ---
 
@@ -281,10 +290,10 @@ flutter test --coverage
 
 This app uses the [Rick and Morty API](https://rickandmortyapi.com/documentation)
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/character` | GET | Get all characters (paginated) |
-| `/character/{id}` | GET | Get character by ID |
-| `/character/?name={query}` | GET | Search characters by name |
+| Endpoint                   | Method | Description                    |
+| -------------------------- | ------ | ------------------------------ |
+| `/character`               | GET    | Get all characters (paginated) |
+| `/character/{id}`          | GET    | Get character by ID            |
+| `/character/?name={query}` | GET    | Search characters by name      |
 
 ---

@@ -284,7 +284,7 @@ flutter test --coverage
 
 ## Author
 
-**Dhani Nugrah** - BIGIO Mobile Developer Take Home Challenge
+**Nugrah Ramadhani** - BIGIO Mobile Developer Take Home Challenge
 
 ## API Reference
 
